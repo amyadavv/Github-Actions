@@ -17,7 +17,7 @@ jobs:
           run: cowsay -f dragon "Run for cover, I am a dragon....RAWR" >> dragon.txt
 
         - name: Test File Exists
-          run: lgrep -i "dragon" dragon.txt
+          run: grep -i "dragon" dragon.txt
 
         - name: Read file
           run: cat dragon.md
